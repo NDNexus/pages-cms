@@ -21,7 +21,7 @@ I'm testing how Pages CMS manages Markdown files in GitHub.
 
 I want to see what happens now I hope the entry also updates in the cms as expected.
 
-![](/media/placeholder.webp)
+![testing image](/media/placeholder.webp)
 
 Wow, can I add tables, lets see...
 
