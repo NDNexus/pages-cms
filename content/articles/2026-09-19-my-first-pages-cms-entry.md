@@ -20,3 +20,22 @@ I'm testing how Pages CMS manages Markdown files in GitHub.
 **The important question:** what exactly gets written to the repository?
 
 I want to see what happens now I hope the entry also updates in the cms as expected.
+
+![](/media/placeholder.webp)
+
+Wow, can I add tables, lets see...
+
+
+| Table Title | A column | Another column |
+| ----------- | -------- | -------------- |
+| A test | is real | And worth it |
+
+
+> This is a quote.
+
+This is another paragraph.
+
+```
+this is code.
+```
+
