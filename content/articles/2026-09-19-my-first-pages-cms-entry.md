@@ -16,3 +16,5 @@ This content was created through Pages CMS.
 I'm testing how Pages CMS manages Markdown files in GitHub.
 
 **The important question:** what exactly gets written to the repository?
+
+I want to see what happens now I hope the entry also updates in the cms as expected.
