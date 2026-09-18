@@ -11,6 +11,10 @@ content:
         type: string
         required: true
 
+      - name: image
+        label: Featured Image
+        type: image
+
       - name: description
         label: Description
         type: text
