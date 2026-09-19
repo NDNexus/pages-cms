@@ -137,7 +137,7 @@ content:
           multiple: true
           max: 4
           value: "{path}"
-          label: "{fields.name}"
+          label: "{fields.title}"
 
       - name: date
         label: Published Date
