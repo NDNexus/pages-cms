@@ -26,7 +26,7 @@ I'm testing how Pages CMS manages Markdown files in GitHub.
 
 I want to see what happens now I hope the entry also updates in the cms as expected.
 
-![testing image](/media/placeholder.webp)
+![](</media/images/Featured Image Standard Size.webp>)
 
 Wow, can I add tables, lets see...
 
