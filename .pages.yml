@@ -22,6 +22,8 @@ content:
     label: Authors
     type: collection
     path: content/authors
+    view:
+      primary: name
 
     fields:
       - name: name
@@ -51,6 +53,8 @@ content:
     label: Categories
     type: collection
     path: content/categories
+    view:
+      primary: name
 
     fields:
       - name: name
@@ -76,7 +80,8 @@ content:
     label: Articles
     type: collection
     path: content/articles
-
+    view:
+      primary: title
     fields:
       - name: title
         label: Title
@@ -96,8 +101,11 @@ content:
       - name: author
         label: Author
         type: reference
+
         options:
           collection: authors
+          value: "{path}"
+          label: "{primary}"
 
       - name: categories
         label: Categories
@@ -107,6 +115,8 @@ content:
           multiple: true
           min: 1
           max: 5
+          value: "{path}"
+          label: "{primary}"
 
       - name: related
         label: Related Articles
@@ -115,6 +125,8 @@ content:
           collection: articles
           multiple: true
           max: 4
+          value: "{path}"
+          label: "{primary}"
 
       - name: date
         label: Published Date
