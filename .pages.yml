@@ -93,6 +93,29 @@ content:
         label: Description
         type: text
 
+      - name: author
+        label: Author
+        type: reference
+        options:
+          collection: authors
+
+      - name: categories
+        label: Categories
+        type: reference
+        options:
+          collection: categories
+          multiple: true
+          min: 1
+          max: 5
+
+      - name: related
+        label: Related Articles
+        type: reference
+        options:
+          collection: articles
+          multiple: true
+          max: 4
+
       - name: date
         label: Published Date
         type: date
