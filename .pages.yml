@@ -13,6 +13,28 @@ media:
     categories:
       - document
 
+components:
+  # ─────────────────────────────────────────
+  # SEO COMPONENT
+  # ─────────────────────────────────────────
+  seo:
+    type: object
+    label: SEO
+    fields:
+      - name: title
+        label: SEO Title
+        type: string
+
+      - name: description
+        label: SEO Description
+        type: text
+
+      - name: image
+        label: Social Image
+        type: image
+        options:
+          media: images
+
 content:
   # ─────────────────────────────────────────
   # AUTHORS
@@ -92,7 +114,7 @@ content:
         - date
         - status
       primary: title
-    
+
     fields:
       - name: title
         label: Title
@@ -163,3 +185,7 @@ content:
         options:
           format: markdown
           media: images
+
+      - name: seo
+        label: SEO
+        component: seo
