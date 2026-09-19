@@ -2,6 +2,9 @@
 title: My First Pages CMS Entry
 image: /media/placeholder.webp
 description: This is a test of the Pages CMS workflow.
+author: content/authors/2026-09-19-nadeem-muhammed.md
+categories:
+  - content/categories/2026-09-19-cms-experiments.md
 date: 2026-09-19
 tags:
   - pages-cms
