@@ -1,10 +1,82 @@
-media: media
+media:
+  - name: images
+    label: Images
+    input: media/images
+    output: /media/images
+    categories:
+      - image
+
+  - name: documents
+    label: Documents
+    input: media/documents
+    output: /media/documents
+    categories:
+      - document
 
 content:
+  # ─────────────────────────────────────────
+  # AUTHORS
+  # ─────────────────────────────────────────
+
+  - name: authors
+    label: Authors
+    type: collection
+    path: content/authors
+
+    fields:
+      - name: name
+        label: Name
+        type: string
+        required: true
+
+      - name: bio
+        label: Biography
+        type: text
+
+      - name: avatar
+        label: Avatar
+        type: image
+        options:
+          media: images
+
+      - name: website
+        label: Website
+        type: string
+
+  # ─────────────────────────────────────────
+  # CATEGORIES
+  # ─────────────────────────────────────────
+
+  - name: categories
+    label: Categories
+    type: collection
+    path: content/categories
+
+    fields:
+      - name: name
+        label: Name
+        type: string
+        required: true
+
+      - name: description
+        label: Description
+        type: text
+
+      - name: image
+        label: Image
+        type: image
+        options:
+          media: images
+
+  # ─────────────────────────────────────────
+  # ARTICLES
+  # ─────────────────────────────────────────
+
   - name: articles
     label: Articles
     type: collection
     path: content/articles
+
     fields:
       - name: title
         label: Title
@@ -14,6 +86,8 @@ content:
       - name: image
         label: Featured Image
         type: image
+        options:
+          media: images
 
       - name: description
         label: Description
@@ -42,3 +116,4 @@ content:
         type: rich-text
         options:
           format: markdown
+          media: images
